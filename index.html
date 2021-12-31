@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .bg1{ background-color: cornflowerblue;}
+        .bg2{ background-color: brown;}
+        .bg3{ background-color: aqua;}
+        .bg4{ background-color: chartreuse;}
+        .bg5{ background-color: chocolate;}
+        .bg6{ background-color: darkblue;}
+        .bg7{ background-color: darksalmon;}
+        .bg8{ background-color: crimson;}
+        .bg9{ background-color: violet;}
+        .bg10{ background-color: yellow;}
+        .bg11{ background-color: seagreen;}
+        .bg12{ background-color: red;}
+        .bg13{ background-color: teal;}
+        .bg14{ background-color: mediumslateblue;}
+        .fl{float: left;}
+        .fr{float: right;}
+        .new{float: left;margin-left: 2%;}
+        .wrapper{
+            width: 100%;
+            height: 100vh;
+        }
+        .head{
+            width: 100%;
+            height: 15vh;
+            position: relative;
+            background-image: url(hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+            background-size: cover;
+        }
+        .icon{
+            height: 15vh;
+            position: absolute;
+            left: 2%;
+            color: cornflowerblue;
+        }
+        .icon .fab{
+            margin-top: 25px;
+            font-size: 40px;
+            font-style: oblique;
+        }
+        .boxcolor{
+            width: 20%;
+            height: 12vh;
+            position: absolute;
+            top: 1.5vh;
+            left: 22%;
+        }
+        .rowcol{
+            height: 5vh;
+            margin-bottom: 1vh;
+        }
+        .c{
+            width: 15%;
+            height: 5vh;
+            border-radius: 10px;
+        }
+        .color-text{
+            width: 25%;
+            height: 11vh;
+            position: absolute;
+            left: 43%;
+            top: 2vh;
+            cursor: pointer;
+        }
+        .abc{
+            width: 8.2%;
+            height: 5vh;
+        }
+        .fas{
+            padding: 5px;
+            font-size: 20px;
+        }
+        .text1{
+            color: springgreen;
+        }
+        .text2{
+            color: teal;
+        }
+        .text3{
+            color: turquoise;
+        }
+        .text4{
+            color: yellow;
+        }
+        .text5{
+            color: wheat;
+        }
+        .text6{
+            color: tomato;
+        }
+        .text7{
+            color: aqua;
+        }
+        .text8{
+            color: bisque;
+        }
+        .text9{
+            color: chartreuse;
+        }
+        .text10{
+            color: crimson;
+        }
+        .text11{
+            color: darkmagenta;
+        }
+        .text12{
+            color: darkorange;
+        }
+        .text13{
+            color: deepskyblue;
+        }
+        .text14{
+            color: forestgreen;
+        }
+        .text15{
+            color: fuchsia;
+        }
+        .text16{
+            color: gray;
+        }
+        .text17{
+            color: indianred;
+        }
+        .text18{
+            color: lightcoral;
+        }
+        .text19{
+            color: lemonchiffon;
+        }
+        .text20{
+            color: lightseagreen;
+        }
+        .text-icon{
+            width: 5%;
+            height: 11vh;
+            position: absolute;
+            left: 71%;
+            top: 2vh;
+        }
+        .def{
+            width: 45%;
+            height: 5vh;
+        }
+        .color-box{
+            width: 20%;
+            height: 11vh;
+            position: absolute;
+            right: 1%;
+            top: 2vh;
+        }
+        .bor{
+            width: 15%;
+            height: 5vh;  
+        }
+        .xyz1{
+            border: cornsilk solid 5px;
+        }
+        .xyz2{
+            border: coral solid 5px;
+        }
+        .xyz3{
+            border: slateblue solid 5px;
+        }
+        .xyz4{
+            border: goldenrod solid 5px;
+        }
+        .xyz5{
+            border: lightsalmon solid 5px;
+        }
+        .xyz6{
+            border: blueviolet solid 5px;
+        }
+        .xyz7{
+            border: royalblue solid 5px;
+        }
+        .xyz8{
+            border: deeppink solid 5px;
+        }
+        .xyz9{
+            border: springgreen solid 5px;
+        }
+        .xyz10{
+            border: orangered solid 5px;
+        }
+        .xyz11{
+            border: crimson solid 5px;
+        }
+        .xyz12{
+            border: cadetblue solid 5px;
+        }
+
+        /* main */
+        .main{
+            width: 100%;
+            height: 85vh;
+            background-image: url(hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+            background-size: cover;
+        }
+        .list{
+            width: 25%;
+            height: 80vh;
+            margin-top: 5vh;
+        }
+        .holder{
+            width:50%;
+            height: 80vh;
+            margin-top: 5vh;
+        }
+        .shade{
+            width:80%;
+            height: 10vh;
+            margin-bottom: 4vh;
+            border-radius: 20px;
+            margin-left: 10%;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            color: white;
+        }
+        .idcard{
+            width: 70%;
+            height: 40vh;
+            position: relative;
+            left: 15%;
+            top: 10vh;
+            border: 7px solid green;
+            border-radius: 20px;
+            display: none;
+        }
+        .img{
+            background-image: url("1637814540550.jpg");
+            width: 25%;
+            height: 24vh;
+            background-size: cover;
+            position: relative;
+            top: 7vh;
+            left: 10%;
+            border-radius: 10px;
+            border: brown 5px solid;
+        }
+        .details{
+            width: 60%;
+            height: 40vh;
+        }
+        .id{
+            width: 100%;
+            height: 10vh;
+        }
+        .h31{
+            position: relative;
+            left: 15%;
+            top: 3vh;
+            font-size: 25px;
+        }
+        .p1{
+            position: relative;
+            left: 10%;
+            top: 5vh;
+            padding-top: 15px;
+        }
+        .p2{
+            position: relative;
+            top: 10vh;
+            left: 20%;
+        }
+        .one{
+            font-size: 50px;
+            border: 1px solid black;
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="icon fl">
+                <i class="fab fa-pinterest"> CardEditor</i>
+            </div>
+            <div class="boxcolor">
+                <div class="rowcol">
+                    <div class="c  bg1 fl" onclick="document.getElementById('icd').style.background='cornflowerblue'"></div>
+                    <div class="c  bg2 new" onclick="document.getElementById('icd').style.background='brown'"></div>
+                    <div class="c  bg3 new" onclick="document.getElementById('icd').style.background='aqua'"></div>
+                    <div class="c  bg4 new" onclick="document.getElementById('icd').style.background='chartreuse'"></div>
+                    <div class="c  bg5 new" onclick="document.getElementById('icd').style.background='chocolate'"></div>
+                    <div class="c  bg6 fr" onclick="document.getElementById('icd').style.background='darkblue'"></div>
+                </div>
+                <div class="rowcol">
+                    <div class="c  bg7 fl" onclick="document.getElementById('icd').style.background='darksalmon'"></div>
+                    <div class="c  bg8 new" onclick="document.getElementById('icd').style.background='crimson'"></div>
+                    <div class="c  bg9 new" onclick="document.getElementById('icd').style.background='violet'"></div>
+                    <div class="c  bg10 new" onclick="document.getElementById('icd').style.background='yellow'"></div>
+                    <div class="c  bg11 new" onclick="document.getElementById('icd').style.background='seagreen'"></div>
+                    <div class="c  bg12 fr" onclick="document.getElementById('icd').style.background='red'"></div>
+                </div>
+            </div>
+            <div class="color-text fl">
+                <div class="rowcol">
+                    <div class="abc text1 bg1 fl" onclick="document.getElementById('icd').style.color='springgreen'"><i class="fas fa-font"></i></div>
+                    <div class="abc text2 bg1 new" onclick="document.getElementById('icd').style.color='teal'"><i class="fas fa-font"></i></div>
+                    <div class="abc text3 bg1 new" onclick="document.getElementById('icd').style.color='turquoise'"><i class="fas fa-font"></i></div>
+                    <div class="abc text4 bg1 new" onclick="document.getElementById('icd').style.color='yellow'"><i class="fas fa-font"></i></div>
+                    <div class="abc text5 bg1 new" onclick="document.getElementById('icd').style.color='wheat'"><i class="fas fa-font"></i></div>
+                    <div class="abc text6 bg1 new" onclick="document.getElementById('icd').style.color='tomato'"><i class="fas fa-font"></i></div>
+                    <div class="abc text7 bg1 new" onclick="document.getElementById('icd').style.color='aqua'"><i class="fas fa-font"></i></div>
+                    <div class="abc text8 bg1 new" onclick="document.getElementById('icd').style.color='bisque'"><i class="fas fa-font"></i></div>
+                    <div class="abc text9 bg1 new" onclick="document.getElementById('icd').style.color='chartreuse'"><i class="fas fa-font"></i></div>
+                    <div class="abc text10 bg1 fr" onclick="document.getElementById('icd').style.color='crimson'"><i class="fas fa-font"></i></div>
+                </div>
+                <div class="rowcol">
+                    <div class="abc text11 bg1 fl" onclick="document.getElementById('icd').style.color='darkmagenta'"><i class="fas fa-font"></i></div>
+                    <div class="abc text12 bg1 new" onclick="document.getElementById('icd').style.color='darkorange'"><i class="fas fa-font"></i></div>
+                    <div class="abc text13 bg1 new" onclick="document.getElementById('icd').style.color='deepskyblue'"><i class="fas fa-font"></i></div>
+                    <div class="abc text14 bg1 new" onclick="document.getElementById('icd').style.color='forestgreen'"><i class="fas fa-font"></i></div>
+                    <div class="abc text15 bg1 new" onclick="document.getElementById('icd').style.color='fuchsia'"><i class="fas fa-font"></i></div>
+                    <div class="abc text16 bg1 new" onclick="document.getElementById('icd').style.color='gray'"><i class="fas fa-font"></i></div>
+                    <div class="abc text17 bg1 new" onclick="document.getElementById('icd').style.color='indianred'"><i class="fas fa-font"></i></div>
+                    <div class="abc text18 bg1 new" onclick="document.getElementById('icd').style.color='lightcoral'"><i class="fas fa-font"></i></div>
+                    <div class="abc text19 bg1 new" onclick="document.getElementById('icd').style.color='lemonchiffon'"><i class="fas fa-font"></i></div>
+                    <div class="abc text20 bg1 fr" onclick="document.getElementById('icd').style.color='lightseagreen'"><i class="fas fa-font"></i></div>
+                </div>
+            </div>
+
+
+            <div class="text-icon">
+                <div class="rowcol">
+                    <div class="def fl bg1" onclick="document.getElementById('icd').style.fontStyle='normal'"><i class="fas fa-bold"></i></div>
+                    <div class="def fr bg2"><i class="fas fa-font"></i></div>
+                </div>
+                <div class="rowcol">
+                    <div class="def fl bg3" onclick="document.getElementById('icd').style.fontStyle='italic'"><i class="fas fa-italic"></i></div>
+                    <div class="def fr bg4" onclick="document.getElementById('icd').style.fontFamily='cursive'"><i class="fas fa-font"></i></div>
+                </div>
+            </div>
+
+            <div class="color-box bg fr">
+                <div class="rowcol bg">
+                    <div class="bor xyz1 fl" onclick="document.getElementById('icd').style.border='7px solid cornsilk'"></div>
+                    <div class="bor xyz2 new" onclick="document.getElementById('icd').style.border='7px solid coral'"></div>
+                    <div class="bor xyz3 new" onclick="document.getElementById('icd').style.border='7px solid slateblue'"></div>
+                    <div class="bor xyz4 new" onclick="document.getElementById('icd').style.border='7px solid goldenrod'"></div>
+                    <div class="bor xyz5 new" onclick="document.getElementById('icd').style.border='7px solid lightsalmon'"></div>
+                    <div class="bor xyz6 fr" onclick="document.getElementById('icd').style.border='7px solid blueviolet'"></div>
+                </div>
+                <div class="rowcol bg">
+                    <div class="bor xyz7 fl" onclick="document.getElementById('icd').style.border='7px solid royalblue'"></div>
+                    <div class="bor xyz8 new" onclick="document.getElementById('icd').style.border='7px solid deeppink'"></div>
+                    <div class="bor xyz9 new" onclick="document.getElementById('icd').style.border='7px solid springgreen'"></div>
+                    <div class="bor xyz10 new" onclick="document.getElementById('icd').style.border='7px solid orangered'"></div>
+                    <div class="bor xyz11 new" onclick="document.getElementById('icd').style.border='7px solid crimson'"></div>
+                    <div class="bor xyz12 fr" onclick="document.getElementById('icd').style.border='7px solid cadetblue'"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="list fl">
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px yellow'">YELLOW</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 20px pink'">PINK</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px limegreen'">LIMEGREEN</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px tomato'">TOMATO</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px skyblue'">SKYBLUE</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px purple'">PURPLE</div>
+            </div>
+            <div class="holder fl">
+                <div class="id" onclick="document.getElementById('icd').style.display='block'"><i class="fas fa-id-card one" ></i></div>
+
+                <div class="idcard bg1" id="icd">
+
+                    <div class="img fl" id="imgg"></div>
+
+                    <div class="details fr">
+                        <h3 class="h31">WEBDESIGNER</h3>
+                        <p class="p1">NAME : SANDEEP YADAV</p>
+                        <p class="p1">Ph.No : 8700230956</p>
+                        <p class="p1">EMAIL : sandy03july99@gmail.com</p>
+                        <p class="p2"><i class="fab fa-pinterest"></i>&nbsp;&nbsp; www.Cardeditor.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list fr">
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px crimson'">CRIMSON</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 20px pink'">PINK</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px chocolate'">CHOCOLATE</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px deeppink'">DEEPPINK</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px royalblue'">ROYALBLUE</div>
+                <div class="shade bg9" onclick="document.getElementById('icd').style.boxShadow='0px 0px 30px 10px orange'">ORANGE</div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
