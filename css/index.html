@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .banner{
+            height: 550px;
+        }
+        .left{
+            width: 75%;
+            height: 550px;
+            background-color: blanchedalmond;
+            float: right;
+            border: brown 10px solid;
+            border-radius: 20px;
+            margin: 3% 2% 0 0;
+        }
+        .left h1{
+            margin: 3%;
+        }
+        .right{
+            width: 20%;
+            height: 550px;
+            background-color: cornflowerblue;
+            float: left;
+            border: royalblue 10px solid;
+            border-radius: 20px;
+            margin: 3% 1% 0 2%;
+        }
+        .right ul{
+            text-align: center;
+            margin-top: 125px;
+        }
+        .right ul li{
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="left" id="left">
+            <h1 id= "title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequuntur!</h1>
+            <p id="msg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, pariatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, pariatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, pariatur.
+            </p>
+
+        </div>
+        <div class="right">
+            <ul>
+                <li onclick="tab('a'),color('e')">Tab 1</li>
+                <li onclick="tab('b'),color('f')">Tab 2</li>
+                <li onclick="tab('c'),color('g')">Tab 3</li>
+                <li onclick="tab('d'),color('h')">Tab 4</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function tab(data){
+            let title ={a:"This is html tab",b:"This is css tab",c:"This is javascript tab",d:"This is jquery tab"};
+
+            document.getElementById("title").innerHTML=title[data];
+            
+
+
+            let msg={
+                a:"Html is Hyper Text Markup Language for Webpages. With Html you can create your own Wesite.",
+                b:"Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
+                c:"JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.",
+                d:"jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax."
+            };
+            document.getElementById("msg").innerHTML=msg[data];
+        }
+        function color(data1){
+            let bgc={
+                e:"red",f:"green",g:"yellow",h:"blue"
+            };
+            document.getElementById("left").style.backgroundColor=bgc[data1];
+        }
+    </script>
+</body>
+</html>
